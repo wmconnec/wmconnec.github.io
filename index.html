@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Undangan Pernikahan</h1>
+        <p>can aya </p>
+        <audio id="music" loop>
+            <source src="weding.mp3" type="audio/mpeg">
+            <source src="weding.ogg" type="audio/ogg">
+            Browser Anda tidak mendukung pemutar audio.
+        </audio>
+        <div id="music-controls">
+            <button id="play-pause">Pause</button>
+        </div>
+    </header>
+    <main>
+        <section id="informasi">
+            <h2>Informasi Acara</h2>
+            <p>Tanggal: 25 Desember 2024</p>
+            <p>Waktu: 10:00 AM</p>
+            <p>Lokasi: Gedung Serbaguna</p>
+        </section>
+        <section id="cerita">
+            <h2>Cerita Cinta</h2>
+            <p>Ini adalah cerita cinta kami...</p>
+        </section>
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <form id="rsvp-form">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <label for="kehadiran">Apakah Anda akan hadir?</label>
+                <select id="kehadiran" name="kehadiran" required>
+                    <option value="ya">Ya</option>
+                    <option value="tidak">Tidak</option>
+                </select>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+        <section id="galeri">
+            <h2>Galeri Foto</h2>
+            <div class="galeri-container">
+                <img src="images/foto1.jpg" alt="Foto 1">
+                <img src="images/foto2.jpg" alt="Foto 2">
+                <img src="images/foto3.jpg" alt="Foto 3">
+                <!-- Tambahkan lebih banyak foto sesuai kebutuhan -->
+            </div>
+        </section>
+        <section id="lokasi">
+            <h2>Lokasi</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Undangan Pernikahan</p>
+    </footer>
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
